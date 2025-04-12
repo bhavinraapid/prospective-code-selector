@@ -65,7 +65,7 @@ export async function addMasterValue(type: string, text: string): Promise<void> 
 
 export async function deleteMasterValue(request: DeleteItemRequest): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/delete-master-value`, {
+    const response = await fetch(`${API_BASE_URL}/master/delete-master-value`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(request)

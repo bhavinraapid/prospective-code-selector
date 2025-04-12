@@ -168,7 +168,8 @@ export const AddMasterItemSection = ({ title, type }: AddMasterItemSectionProps)
                   toast.error("Please select an item to delete");
                 }
               }}
-              disabled={!selectedItem}
+              // disabled={!selectedItem} // uncomment this when you want to enable delete button 
+              disabled={true}
               className="h-10"
             >
               <Trash className="h-4 w-4 mr-1" />
