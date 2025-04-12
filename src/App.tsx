@@ -13,6 +13,7 @@ import CodeMapping from "./pages/CodeMapping";
 import ViewFullMapping from "./pages/ViewFullMapping";
 import HealthFrontend from "./pages/HealthFrontend";
 import HealthBackend from "./pages/HealthBackend";
+import HealthPython from "./pages/HealthPython";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/health" element={<HealthFrontend />} />
           <Route path="/health-backend" element={<HealthBackend />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/health-python" element={<HealthPython />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
