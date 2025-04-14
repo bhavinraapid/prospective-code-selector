@@ -2,7 +2,7 @@
 import { CodeMaster, DataItem, DeleteItemRequest } from "@/types";
 
 // Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'http://prospectivetool.raapidinc.com:8081/research';
+const API_BASE_URL = 'http://localhost:8081/research';
 
 export async function addCodeToMaster(text: string): Promise<void> {
   try {
