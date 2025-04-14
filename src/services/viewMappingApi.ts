@@ -3,7 +3,7 @@ import { CodeMappingObject, CodeMaster, DataItem } from "@/types";
 
 
 // Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'http://localhost:8081/research';
+const API_BASE_URL = 'https://prospectivetool.raapidinc.com/research';
 
 
 export async function fetchCodeMappingData(item: DataItem, code: CodeMaster, type: string): Promise<CodeMappingObject[]> {
