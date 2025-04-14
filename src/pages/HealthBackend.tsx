@@ -4,7 +4,7 @@ const HealthBackend: React.FC = () => {
   const [status, setStatus] = useState("Checking...");
 
   useEffect(() => {
-    fetch("http://localhost:8081/research/health")
+    fetch("https://prospectivetool.raapidinc.com:8081/research/health")
       .then((res) => {
         if (res.ok) return res.text();
         throw new Error("Failed");

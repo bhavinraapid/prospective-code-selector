@@ -1,7 +1,7 @@
 import { CodeMaster, DataItem, SelectedItem, CodeGroups } from '@/types';
 
 // Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'http://localhost:8081/research';
+const API_BASE_URL = 'https://prospectivetool.raapidinc.com:8081/research';
 
 export const fetchCodes = async (): Promise<CodeMaster[]> => {
   try {
