@@ -1,8 +1,7 @@
 
 import { CodeMaster, DataItem, DeleteItemRequest } from "@/types";
 
-// Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'http://localhost:8081/research';
+import { API_BASE_URL } from '@/config';
 
 export async function addCodeToMaster(text: string): Promise<void> {
   try {

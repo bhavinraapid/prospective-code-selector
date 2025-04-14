@@ -1,7 +1,8 @@
 import { CodeMaster, DataItem, SelectedItem, CodeGroups } from '@/types';
+// import the base URL from config
+import { API_BASE_URL } from '@/config';
 
-// Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'http://localhost:8081/research';
+
 
 export const fetchCodes = async (): Promise<CodeMaster[]> => {
   try {

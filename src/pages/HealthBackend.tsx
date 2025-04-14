@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { API_BASE_URL } from '@/config'; // 👈 use the alias path
 
 const HealthBackend: React.FC = () => {
   const [status, setStatus] = useState("Checking...");
 
   useEffect(() => {
-    fetch("http://localhost:8081/research/health")
+    fetch(`${API_BASE_URL}/health`)
       .then((res) => {
         if (res.ok) return res.text();
         throw new Error("Failed");
