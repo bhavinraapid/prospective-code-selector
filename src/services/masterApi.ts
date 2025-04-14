@@ -2,7 +2,7 @@
 import { CodeMaster, DataItem, DeleteItemRequest } from "@/types";
 
 // Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'https://prospectivetool.raapidinc.com/research';
+const API_BASE_URL = 'http://localhost:8081/research';
 
 export async function addCodeToMaster(text: string): Promise<void> {
   try {
@@ -65,7 +65,7 @@ export async function addMasterValue(type: string, text: string): Promise<void> 
 
 export async function deleteMasterValue(request: DeleteItemRequest): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/master/delete-master-value`, {
+    const response = await fetch(`${API_BASE_URL}/api/delete-master-value`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(request)

@@ -2,7 +2,7 @@
 import { CodeMaster, DataItem, CUIDetails } from "@/types";
 
 // Base API URL - in a real app, this would be your backend URL
-const API_BASE_URL = 'https://prospectivetool.raapidinc.com/research';
+const API_BASE_URL = 'http://localhost:8081/research';
 
 export async function fetchCuis(masterItem: DataItem, code: CodeMaster, type:string): Promise<CUIDetails[]> {
   try {
