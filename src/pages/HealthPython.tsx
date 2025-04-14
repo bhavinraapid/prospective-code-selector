@@ -4,7 +4,7 @@ const HealthPython: React.FC = () => {
   const [status, setStatus] = useState("Checking...");
 
   useEffect(() => {
-    fetch("https://prospectivetool.raapidinc.com:7000/health")
+    fetch("http://prospectivetool.raapidinc.com:7000/health")
       .then((res) => {
         if (res.ok) return res.json(); // Use .json() instead of .text() to parse JSON response
         throw new Error("Failed");
